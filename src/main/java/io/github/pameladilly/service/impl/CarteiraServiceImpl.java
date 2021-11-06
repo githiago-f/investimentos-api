@@ -44,7 +44,7 @@ public class CarteiraServiceImpl implements CarteiraService {
 
 
 
-         return repository.findById(carteira.getIdCarteira()).map( entity -> {
+        return repository.findById(carteira.getIdCarteira()).map( entity -> {
 
                     entity.setDescricao(carteira.getDescricao());
                     return repository.save(entity);
